@@ -1,0 +1,16 @@
+.header {
+    margin-top: 15px;
+    text-align: center;
+    background-color: darkgreen;
+    padding: 5px 0px 10px 0px
+}
+
+.header h1 {
+    color: white;
+    font-size: 65px;
+}
+
+.header h3 {
+    color: white;
+    font-size: 40px;
+}
