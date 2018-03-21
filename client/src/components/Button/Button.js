@@ -1,6 +1,13 @@
 import React from "react";
-import "./Button.css";
 
-<button type="submit" className="btn btn-primary btn-lg">
-    <strong>Search</strong>
-</button>
+// Destructuring the type, className, children and onClick props, applying them to the button element
+const Button = ({ type = "default", className, children, onClick }) => (
+  <button
+    onClick={onClick}
+    className={["btn btn-primary btn-lg", `btn-${type}`, className].join(" ")}
+  >
+    {children}
+  </button>
+);
+
+export default Button;
